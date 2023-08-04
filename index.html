@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Clock and Weather Viewer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body bgcolor="white" style="background-image: url('imge.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+        <!--Display day information e.g Wednesday March 12,2021-->
+        <div id="dayIntro">
+            <p id="dayName"></p>
+        </div>
+        <div class="container">
+            <!-- Display time -->
+            <div class="dispClock">
+                <div id="time"></div>
+<div class="container-fluid">
+        <div class="row offset-sm-1">
+            <!-- Header part -->
+            <section class="header col-md-4 col-sm-10 ">
+                <h1> <font color = "White"><big><b><i>Weather Viewer</i></b></big></font></h1>
+            </section>
+
+            <section class="main col-md-7 col-sm-10  ">
+            <section class="inputs">
+                <input type="text" placeholder="Enter any city..." id="cityinput" style="margin-left: 10px;margin-right: 10px;">
+                <input type="submit" value="Submit" id="add" style="margin-right: 10px; margin-top: 10px;">
+            </section>
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+
+                </div>
+            </section>
+            </section>
+        </div>
+    </div>
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

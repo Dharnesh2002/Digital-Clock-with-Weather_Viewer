@@ -1,0 +1,33 @@
+<!DOCTPYE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <title>Music player</title>
+   <link rel="stylesheet" href="styles.css">
+   <link href="index.html">
+    </head>
+        <body>
+            <form>
+                <h1>Weather Caster</h1>
+                <label>Mail-id</label>
+                <input type="text" id="Mail-id">
+                <label>Password</label>
+                <input type="password" id="password">
+                <a onclick="check()" id="check">Login</a>
+                <a>Forget Password?</a>                
+            </form>
+            <script>
+                function check(){
+                let a=document.getElementById("Mail-id").value;
+                let b=document.getElementById("password").value;
+                if(a=="dharneshmkceit@gmail.com" && b=="Dharnesh@123"){  
+                    document.getElementById("check").href="index.html";
+                }
+                else
+                    alert("Invalid Credentials");
+            }
+            </script>
+        </body>
+</html>
